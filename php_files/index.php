@@ -25,7 +25,7 @@ require "forget_order.php";
                 <input type="text" name="customerName" id="cn" size="30">
 
                 <label for="desrt">Dessert:</label>
-                <select id="desrt" name="Dessert">
+                <select id="desrt" name="dessert">
                     <option value="">Select One...</option>
                     <option value="Cheesecake" <?= dessertSelected("Cheesecake"); ?>>Cheesecake</option>
                     <option value="Chocolate Cake" <?= dessertSelected("Chocolate Cake"); ?>>Chocolate Cake</option>
@@ -35,7 +35,7 @@ require "forget_order.php";
                 </select>
 
                 <label for="dn">Drinks:</label>
-                <select id="dn" name="drinks">
+                <select id="dn" name="drink">
                     <option value="">Select One...</option>
                     <option value="Coffee" <?= drinkSelected("Coffee"); ?>>Coffee</option>
                     <option value="Chocolate Milk" <?= drinkSelected("Chocolate Milk"); ?>>Chocolate Milk</option>

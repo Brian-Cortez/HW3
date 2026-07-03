@@ -25,4 +25,6 @@ $orderSummary = order();
       <p><?= htmlspecialchars(orderProfile()); ?></p>
    </div>
    <p class="insight-note full-width-note"><?= htmlspecialchars(pricingNote()); ?></p>
+
+   <a href="index.php"><button>Make a new order!</button></a>
 </div>

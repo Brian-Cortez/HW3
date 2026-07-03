@@ -82,9 +82,10 @@ function pairingSuggestion(): string {
 function dessertPrice(): float {
    $prices = [
       'Cheesecake' => 4.25,
-      'Chocolate Cake' => 4.5,
-      'Carrot Cake' => 4.0,
+      'Chocolate Cake' => 4.50,
+      'Carrot Cake' => 4.00,
       'Tiramisu' => 4.75,
+      'Vanilla Milkshake' => 3.75,
    ];
 
    return $prices[sessionValue('dessert')] ?? 0.0;
@@ -93,10 +94,12 @@ function dessertPrice(): float {
 function drinkPrice(): float {
    $basePrices = [
       'Coffee' => 2.25,
-      'Hot Chocolate' => 2.75,
-      'Root Beer' => 2.5,
-      'Tea' => 2.0,
+      'Chocolate Milk' => 2.75,
+      'Boba' => 3.50,
+      'Tea' => 2.00,
       'Milk' => 1.75,
+      'Juice' => 2.50,
+      'Root Beer' => 2.50,
    ];
    $sizeUpcharge = [
       'Small' => 0.0,
@@ -163,6 +166,3 @@ function drinkSelected(string $drink): string {
 function drinkSizeSelected(string $drinkSize): string {
    return ($_SESSION['drinkSize'] ?? '') === $drinkSize ? 'checked' : '';
 }
-
-
-?>
