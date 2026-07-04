@@ -16,6 +16,9 @@ require "order_functions.php";
 </header>
 
 <main class="content-grid">
+        <aside class="estimated-total">
+                Estimates Total:  <?= formattedTotal(); ?>
+        </aside>
     <section class="panel">
         <form action="./process_order.php" method="post">
             <div class="Inputs">
@@ -63,8 +66,10 @@ require "order_functions.php";
                     </label>
                 </div>
 
+                
+
                 <button type="submit" class="order-buttons">Place Order!</button>
-                <a href="forget_order.php" class="button-setup"> Place a new order!</a>
+                <a href="forget_order.php" id="button-setup" class="order-buttons"> Place a new order!</a>
 
             </div>
         </form>
